@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="Style\WIVP.css" rel="stylesheet" type="text/css">
+    <script src="scripts\displayimg.js"></script>
+  </head>
+
+  <body>
+    <!-- The grid: four columns -->
+    <div class="row">
+      <div class="column" id = "test">
+        <!--<img src="C:\vlad\Pictures\Verse\AliceMR\dcgmv45-c7d1b2af-a3f5-4b2e-9dfe-a7ec87a4e6fa.jpg"
+        alt="Nature" width=100% onclick="myFunction(this);">-->
+        <script>   var img = new Image();
+                   img.src =
+        "C:\vlad\Pictures\Verse\AliceMR\dcgmv45-c7d1b2af-a3f5-4b2e-9dfe-a7ec87a4e6fa.jpg";
+                   document.getElementById("test").appendChild(img);
+                   down.innerHTML = "Image Element Added.";</script>
+      </div>
+      <div class="column">
+        <img src="C:\vlad\Pictures\Verse\AliceMR\d9xyllf-27cee510-e047-419e-aaed-18c1f36b82ad.jpg" alt="Snow" width=100% onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="C:\vlad\Pictures\Verse\AliceMR\alice_in_wonderland__hatter_by_ninjatic.jpg" alt="Mountains" width=100% onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="C:\vlad\Pictures\Verse\AliceMR\alice_by_ormeli-d4jo1zc.jpg" alt="Lights" width=100% onclick="myFunction(this);">
+      </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width:100%">
+
+      <!-- Image text -->
+      <div id="imgtext"></div>
+    </div>
+  </body>
+</html>
